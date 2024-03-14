@@ -1,0 +1,198 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5ef;
+  height: 50px;
+  z-index: 1;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+nav {
+  display: flex;
+  gap: 64px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: 700;
+}
+
+nav > button {
+  color: #304254;
+}
+
+/* HOME */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  gap: 100px;
+  color: #fff;
+  background-image: url('images/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brand {
+  font-family: cursive;
+  font-size: 2.2em;
+  letter-spacing: 0.1em;
+  justify-self: start;
+}
+
+.title {
+  font-size: 6em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.brand,
+.title {
+  text-transform: uppercase;
+}
+
+.dineBtn {
+  background-color: #fff;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+}
+
+.dineBtn:hover {
+  background-color: #d6b9a1;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  gap: 24px;
+  height: calc(100vh - 100px);
+}
+
+.menu div {
+  width: 300px;
+}
+
+.flavors div {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.flavors p {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mouthwatering,
+.wholesome,
+.sweet {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  height: 400px;
+}
+
+.mouthwatering {
+  background-image: url('images/menu1.jpg');
+}
+
+.wholesome {
+  background-image: url('images/menu2.jpeg');
+}
+
+.sweet {
+  background-image: url('images/menu3.jpeg');
+}
+
+.item > a {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #000;
+}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.left {
+  background-image: url('images/contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40%;
+  margin-left: 200px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.soon {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+.info div:first-of-type {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer,
+footer a {
+  color: #304254;
+  font-weight: 600;
+}
